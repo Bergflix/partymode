@@ -1,0 +1,52 @@
+@import "fonts/fonts.css";
+#logo {
+    width: 175;
+    height: 60;
+}
+
+body {
+    overflow:hidden;
+    background-color: black;
+    font-family: "Gellix Bold", sans-serif;
+    color: white;
+}
+
+
+.partyChat {
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+    border: thin solid white;
+}
+
+.chatArea {
+    height: 800;
+    overflow: hidden;
+    width: 320;
+    overflow: auto;
+}
+
+#partyheader {
+    font-size: 25;
+}
+
+#partyname {
+    position: absolute;
+    top: 0.5%;
+    left: 11%;
+}
+
+#newMessage {
+    width: 200;
+    position: fixed;
+    right: 3%;
+    bottom: 7%;
+    color: white;
+    background: #1C1C1C;
+    border: none;
+    padding: .5rem;
+}
+
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }

@@ -1,7 +1,11 @@
 @import "fonts/fonts.css";
 #logo {
     width: 175;
-    height: 60;
+    height: 45;
+}
+
+.login-room {
+    background-image: url("https://share.bergflix.de/imgs/captain_pineapple.png");
 }
 
 body {
@@ -11,12 +15,31 @@ body {
     color: white;
 }
 
+#login-room-header-2 {
+    position: absolute;
+    top: 38%;
+    right: 44%;
+}
+
+#login-room-header-3 {
+    position: absolute;
+    font-size: 30pt;
+    top: 44%;
+    right: 38.5%;
+}
+
+.login-room-create #login-room-header-2 {
+    position: absolute;
+    top: 62%;
+    right: 45%;   
+}
+
+
 
 .partyChat {
     position: absolute;
     top: 0.5%;
     right: 0.5%;
-    border: thin solid white;
 }
 
 .chatArea {

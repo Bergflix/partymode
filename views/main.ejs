@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title> Party Mode ~ Bergflix </title>
+      <link href="style.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+      <script src="app.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <br>
+            <img id="logo" src="https://share.bergflix.de/logo/long_light.png">
+            <h2 id="partyname"> {partyName} </h2>
+         </div>
+         <br>
+         <br>
+         <div class="videoArea">
+            <iframe width="1560" height="740" src="https://www.youtube.com/embed/A2UqIa7QgD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videoInformation">
+                {videoInformation}
+            </div>
+         </div>
+      </div>
+         <div class="partyChat">
+            <h3 id="partyHeader">Party-Chat</h3>
+            <div class="chatArea">
+               <ul id="messages"></ul>
+            </div>
+         </div>
+         <form>
+            <div class="input">
+            <input id="newMessage" type="text" placeholder="Nachricht eingeben..." autocomplete="off" autofocus="on" >
+         </div>
+         </form>
+      </div>
+      </div>
+   </body>
+</html>

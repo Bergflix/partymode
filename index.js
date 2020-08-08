@@ -23,6 +23,10 @@ io.sockets.on('connection', function(socket) {
         io.emit('chat_message', '<strong>' + socket.username + '</strong>: ' + message);
     });
 
+    socket.on('create', function(id, name, pw){
+        io.emit('join_room', {id, name, pw});
+    })
+
 });
 
 const server = http.listen(1337, function() {

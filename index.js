@@ -9,6 +9,16 @@ app.get('/', function(req, res) {
     res.render('index.ejs');
 });
 
+
+let roomid = async function(callback){
+  await getRoomId(callback);
+  return roomid === null ? 'roomid_not_found' : getRoomId;
+}
+
+app.get('/' + roomid, function(req, res) {
+  res.render('index.ejs')
+})
+
 io.sockets.on('connection', function(socket) {
     socket.on('username', function(username) {
         socket.username = username;
@@ -24,9 +34,11 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('create', function(id, name, pw){
-        io.emit('join_room', {id, name, pw});
+        async function getRoomId(callback){
+          io.emit('join_room', {id, name, pw});
+          callback(id, name, pw);
+        }
     })
-
 });
 
 const server = http.listen(1337, function() {

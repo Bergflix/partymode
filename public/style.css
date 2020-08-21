@@ -19,6 +19,8 @@ body {
     position: absolute;
     top: 38%;
     right: 44%;
+    background-color: white;
+    color: black;
 }
 
 #login-room-header-3 {
@@ -31,7 +33,7 @@ body {
 .login-room-create #login-room-header-2 {
     position: absolute;
     top: 62%;
-    right: 45%;   
+    right: 45%;
 }
 
 
